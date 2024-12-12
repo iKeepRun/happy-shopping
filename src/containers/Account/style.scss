@@ -1,4 +1,4 @@
-.login-page {
+.account-page {
     .tab {
         padding: .5rem 0 .77rem 0;
         margin: 0 auto;
@@ -9,17 +9,19 @@
         &-item {
             font-weight: bold;
             display: inline-block;
-            &-left {
-                /* float: right; */
-                color: #73D13D
-            }
+        
             &-right {
                 float: right;
             }
-
+            
             a {
                 text-decoration: none;
                 color: #242424;
+            }
+            &-activity {
+                a {
+                    color: #73D13D ;
+                }
             }
         }
 

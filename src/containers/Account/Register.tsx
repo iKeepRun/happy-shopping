@@ -1,5 +1,3 @@
-import "./style.scss";
-import { Link } from "react-router-dom";
 import {  useRef, useState } from "react";
 import useRequest from "../../utils/useRequest";
 import Modal,{ ModalRefType } from "../../components/Modal";
@@ -57,13 +55,7 @@ function Register() {
 
 
     return (
-        <div className="page register-page">
-            <div className="tab">
-                <div className="tab-item tab-item-left" >
-                    <Link to={"/login"}>登录</Link>
-                </div>
-                <div className="tab-item tab-item-right" >注册</div>
-            </div>
+           <>
             <div className="form">
             <div className="form-item">
                     <div className="form-item-title">用户名</div>
@@ -97,7 +89,7 @@ function Register() {
             <div className="submit" onClick={handleLoginClick}>注册</div>
           
             <Modal ref={modalRef}/>
-        </div>)
+        </>)
 }
 
 export default Register;

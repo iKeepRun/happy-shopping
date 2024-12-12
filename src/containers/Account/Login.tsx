@@ -1,5 +1,3 @@
-import "./style.scss";
-import { useNavigate ,Link } from "react-router-dom";
 import {  useRef, useState } from "react";
 import useRequest from "../../utils/useRequest";
 import Modal,{ ModalRefType } from "../../components/Modal";
@@ -15,14 +13,10 @@ function Login() {
     const modalRef=useRef<ModalRefType>(null!);
     const [phoneNumber, setPhoneNumber] = useState('');
     const [password, setPassword] = useState('')
-    const navigate = useNavigate();
 
     const { request } = useRequest<ResponseType>()
     
 
-    function handleRegisterClick() {
-        navigate("/Register")
-    }
     function handleLoginClick() {
         if(!phoneNumber){
             modalRef.current.showMessage("手机号不能为空");
@@ -52,13 +46,9 @@ function Login() {
 
 
     return (
-        <div className="page login-page">
-            <div className="tab">
-                <div className="tab-item tab-item-left" >登录</div>
-                <div className="tab-item tab-item-right" onClick={handleRegisterClick}><Link to={'/register'}>注册</Link></div>
-            </div>
-            <div className="form">
-                
+        <>
+        
+            <div className="form">   
                 <div className="form-item">
                     <div className="form-item-title">手机号</div>
                     <input className="form-item-content" placeholder="请输入手机号码"
@@ -78,7 +68,7 @@ function Login() {
             <div className="notice">*登录即表示您赞同使用条款及隐私政策</div>
         
             <Modal ref={modalRef}/>
-        </div>)
+        </>)
 }
 
 export default Login;
