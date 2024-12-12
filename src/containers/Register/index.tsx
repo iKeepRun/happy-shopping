@@ -1,29 +1,29 @@
 import "./style.scss";
-import { useNavigate ,Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {  useRef, useState } from "react";
 import useRequest from "../../utils/useRequest";
 import Modal,{ ModalRefType } from "../../components/Modal";
 
-function Login() {
+function Register() {
     //返回值类型
   type ResponseType = {
-        success: string;
-        data:{
-            "token":string
-        }
+        success: boolean
+        data:string
     }
+    
     const modalRef=useRef<ModalRefType>(null!);
     const [phoneNumber, setPhoneNumber] = useState('');
-    const [password, setPassword] = useState('')
-    const navigate = useNavigate();
-
+    const [userName, setUserName] = useState('');
+    const [password, setPassword] = useState('');
+    const [checkPassword, setCheckPassword] = useState('');
+   
     const { request } = useRequest<ResponseType>()
     
-
-    function handleRegisterClick() {
-        navigate("/Register")
-    }
     function handleLoginClick() {
+        if(!userName){
+            modalRef.current.showMessage("用户名不能为空");
+            return ;
+        } 
         if(!phoneNumber){
             modalRef.current.showMessage("手机号不能为空");
             return;
@@ -32,10 +32,15 @@ function Login() {
             modalRef.current.showMessage("密码不能为空");
             return ;
         } 
+        if(!checkPassword){
+            modalRef.current.showMessage("确认密码不能为空");
+            return ;
+        } 
         request({
-                url:"/login.json",
+                url:"/register.json",
                 method:"POST",
                 data:{
+                    userName:userName,
                     phoneNumber:phoneNumber,
                     password:password,
                 },    
@@ -52,13 +57,21 @@ function Login() {
 
 
     return (
-        <div className="page login-page">
+        <div className="page register-page">
             <div className="tab">
-                <div className="tab-item tab-item-left" >登录</div>
-                <div className="tab-item tab-item-right" onClick={handleRegisterClick}><Link to={'/register'}>注册</Link></div>
+                <div className="tab-item tab-item-left" >
+                    <Link to={"/login"}>登录</Link>
+                </div>
+                <div className="tab-item tab-item-right" >注册</div>
             </div>
             <div className="form">
-                
+            <div className="form-item">
+                    <div className="form-item-title">用户名</div>
+                    <input className="form-item-content" placeholder="请输入用户名"
+                        value={userName}
+                        onChange={(e) => { setUserName(e.target.value) }}
+                    />
+                </div>
                 <div className="form-item">
                     <div className="form-item-title">手机号</div>
                     <input className="form-item-content" placeholder="请输入手机号码"
@@ -70,15 +83,21 @@ function Login() {
                     <div className="form-item-title">密码</div>
                     <input className="form-item-content" placeholder="请输入密码"
                         value={password}
-                        onChange={(e) => { setPassword(e.target.value) }}
+                        onChange={(e) => {setPassword(e.target.value) }}
+                    />
+                </div>
+                <div className="form-item">
+                    <div className="form-item-title">确认密码</div>
+                    <input className="form-item-content" placeholder="请输入确认密码"
+                        value={checkPassword}
+                        onChange={(e) => { setCheckPassword(e.target.value) }}
                     />
                 </div>
             </div>
-            <div className="submit" onClick={handleLoginClick}>登录</div>
-            <div className="notice">*登录即表示您赞同使用条款及隐私政策</div>
-        
+            <div className="submit" onClick={handleLoginClick}>注册</div>
+          
             <Modal ref={modalRef}/>
         </div>)
 }
 
-export default Login;
+export default Register;
