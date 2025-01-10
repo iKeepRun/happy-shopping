@@ -62,6 +62,9 @@ function App() {
     },{
       path:"/mine",
       element:<Mine />
+    },{
+      path:"*",
+      element:<Home/>
     }
   ])
   return (

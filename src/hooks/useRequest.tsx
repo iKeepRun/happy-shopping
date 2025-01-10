@@ -29,6 +29,7 @@ function useRequest<T>(options: AxiosRequestConfig & { manual?: boolean } = defa
         const headers = loginToken ? { token: loginToken } : {}
 
         return axios.request<T>({
+            // baseURL:"http://xxx.xxx.com/xxx",
             url: requestOptions.url,
             method: requestOptions.method,
             signal: controllerRef.current.signal,
