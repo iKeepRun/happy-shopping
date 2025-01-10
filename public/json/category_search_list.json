@@ -1,0 +1,42 @@
+{
+	"success":true,
+	"data":[
+			{"id":"88391",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-1.png",
+			"title":"华都食品 鸡翅中 1000g/ ....",
+			"price":59.9,
+			"sales":156
+			},{
+			"id":"88402",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-2.png",
+			"title":"华都食品 鸡翅中 1000g/ ....",
+			"price":59.9,
+			"sales":156
+			},{
+			"id":"88413",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-3.png",
+			"title":"华都食品 鸡翅中 1000g/ ....",
+			"price":59.9,
+			"sales":156
+			},{
+			"id":"88424",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-4.png",
+			"title":"华都食品 鸡翅中 1000g/ ....",
+			"price":59.9,
+			"sales":156
+			},{
+			"id":"88435",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-5.png",
+			"title":"华都食品 鸡翅中 1000g/ ....",
+			"price":59.9,
+			"sales":156
+			},{
+			"id":"88446",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-6.png",
+			"title":"华都食品 鸡翅中 1000g/ ....",
+			"price":59.9,
+			"sales":156
+			}
+	]
+	
+}

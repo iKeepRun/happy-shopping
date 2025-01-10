@@ -1,0 +1,69 @@
+{
+	"success":true,
+	"data":{
+		"timeRange":[
+					[
+					  { "label":"2025-01-09", "value":"2025-01-09"},
+					  { "label":"2025-01-10", "value":"2025-01-10"},
+					  { "label":"2025-01-11", "value":"2025-01-11"}
+					],                               
+					[                                
+					  { "label":"09", "value":"09"},
+					  { "label":"10", "value":"10"},
+					  { "label":"11", "value":"11"}
+					],
+					[                                
+					  { "label":"00", "value":"00"},
+					  { "label":"15", "value":"15"},
+					  { "label":"30", "value":"30"},
+					  { "label":"45", "value":"45"}
+					]
+        ],
+		"address":{
+			"id":"10036",
+			"name":"王翠花",
+			"phone":"13215478485",
+			"address":"北京市昌平南布镇风景丽苑68号"
+		},
+        "time": ["2025-01-09","09","00"],
+		"total":630,
+        "shop":[{
+			"shopId":"8137",
+			"shopName":"喜梅蔬菜店",
+			"cartList":[{
+				"productId":"88391",
+				"imgUrl":"http://statics.dell-lee.com/shopping/category-list-1.png",
+				"weight":"0.45kg",
+				"title":"淮坊水果萝卜10斤水果萝卜甜脆水果型淮县青沙窝天津萝卜...",
+				"price":15,
+				"count":2
+			},{
+				"productId":"88392",
+				"imgUrl":"http://statics.dell-lee.com/shopping/category-list-2.png",
+				"weight":"0.45kg",
+				"title":"城市厨房 澳洲牛肉卷肥牛卷450g牛肉片火锅生鲜牛羊肉类食材...",
+				"price":35,
+				"count":3
+			}]
+		},{
+			"shopId":"8138",
+			"shopName":"喜梅蔬菜店",
+			"cartList":[{
+				"productId":"81381",
+				"imgUrl":"http://statics.dell-lee.com/shopping/category-list-3.png",
+				"weight":"0.45kg",
+				"title":"品珍鲜活 生鲜鱼类三去净腥东星斑 彩虹鳃红罗非鱼 净重...",
+				"price":50,
+				"count":10
+			},{
+				"productId":"81382",
+				"imgUrl":"http://statics.dell-lee.com/shopping/category-list-4.png",
+				"weight":"0.45kg",
+				"title":"城市厨房 澳洲牛肉卷肥牛卷450g牛肉片火锅生鲜牛羊肉类食材...",
+				"price":35,
+				"count":3
+			}]
+		}] 		
+	}
+	
+}

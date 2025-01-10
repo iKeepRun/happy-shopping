@@ -1,0 +1,10 @@
+{
+	"success":true,
+	"data":[
+		{"id":"1132381","name":"金锣 国产猪肉 去皮猪五花肉块金锣 国产猪肉 去皮猪五花肉块金锣 国产猪肉 去皮猪五花肉块","imgUrl":"http://statics.dell-lee.com/shopping/fresh-1.png","price":"66.9","sales":"555"},
+		{"id":"1132382","name":"肉管家 俄罗斯进口Prime级谷饲料养殖","imgUrl":"http://statics.dell-lee.com/shopping/fresh-2.png","price":"98","sales":"666"},
+		{"id":"1132383","name":"乐海港 鲜活波士顿龙虾 2只装大包装","imgUrl":"http://statics.dell-lee.com/shopping/fresh-3.png","price":"378","sales":"777"},
+		{"id":"1132384","name":"初鲜 冷冻鱿鱼头 冷冻鱿鱼须400g","imgUrl":"http://statics.dell-lee.com/shopping/fresh-4.png","price":"39","sales":"888"}
+		]
+	
+}

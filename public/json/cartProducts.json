@@ -1,0 +1,42 @@
+{
+	"success":true,
+	"data":[{
+		"shopId":"8137",
+		"shopName":"喜梅蔬菜店",
+		"cartList":[{
+			"productId":"81371",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-1.png",
+			"weight":"0.45kg",
+			"title":"淮坊水果萝卜10斤水果萝卜甜脆水果型潍县清沙窝天津萝卜...",
+			"price":14.9,
+			"count":2
+		},{
+			"productId":"81372",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-2.png",
+			"weight":"0.45kg",
+			"title":"城市厨房 澳洲牛肉卷肥牛卷450g牛肉片火锅生鲜牛羊肉食材...",
+			"price":56.9,
+			"count":1
+		}]
+	},
+	{
+		"shopId":"8138",
+		"shopName":"昌平熟食店",
+		"cartList":[{
+			"productId":"81381",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-3.png",
+			"weight":"0.15kg",
+			"title":"淮坊水果萝卜10斤水果萝卜甜脆水果型潍县清沙窝天津萝卜...",
+			"price":5.8,
+			"count":3
+		},{
+			"productId":"81382",
+			"imgUrl":"http://statics.dell-lee.com/shopping/category-list-4.png",
+			"weight":"0.45kg",
+			"title":"淮坊水果萝卜10斤水果萝卜甜脆水果型潍县清沙窝天津萝卜...",
+			"price":68.5,
+			"count":7
+		}]
+	}
+	]
+}

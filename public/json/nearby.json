@@ -1,0 +1,9 @@
+{
+	"success":true,
+	"data":[
+			{"name":"ccc","phone":"18888888888","address":"北京市昌平区南部镇四合国88号","latitude":"373.0","longitude":"88"},
+			{"name":"zzz","phone":"18877777777","address":"武汉市南昌区东部镇六合国78号","latitude":"373.1","longitude":"77"},
+			{"name":"qqq","phone":"18866666666","address":"长沙市和平路北部镇八合国68号","latitude":"373.2","longitude":"66"}
+	]
+	
+}
