@@ -1,46 +1,105 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Happy Shopping
 
-## Available Scripts
+一个基于 React + TypeScript 开发的现代化电商小程序。
 
-In the project directory, you can run:
+## 项目简介
 
-### `npm start`
+Happy Shopping 是一个功能完善的电商小程序，提供商品浏览、购物车管理、订单处理等核心功能。项目采用现代化的技术栈和最佳实践，确保良好的用户体验和代码可维护性。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 技术栈
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **前端框架**：React 18
+- **开发语言**：TypeScript
+- **样式处理**：SASS
+- **路由管理**：React Router v6
+- **HTTP 请求**：Axios
+- **UI 组件**：Swiper
+- **构建工具**：CRACO
+- **代码规范**：ESLint
+- **样式标准化**：Normalize.css
 
-### `npm test`
+## 项目结构
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── components/     # 可复用组件
+├── containers/     # 页面级组件
+├── hooks/         # 自定义 React Hooks
+├── styles/        # 样式文件
+├── utils/         # 工具函数
+├── static/        # 静态资源
+├── App.tsx        # 应用程序主组件
+└── index.js       # 应用程序入口文件
+```
 
-### `npm run build`
+## 开始使用
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 环境要求
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js >= 14.0.0
+- npm >= 6.14.0
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 安装
 
-### `npm run eject`
+1. 克隆项目
+```bash
+git clone [项目地址]
+cd HappyShopping
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. 安装依赖
+```bash
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 开发
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+启动开发服务器：
+```bash
+npm start
+```
+访问 [http://localhost:3000](http://localhost:3000) 查看应用。
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 构建
 
-## Learn More
+构建生产环境版本：
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 测试
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+运行测试：
+```bash
+npm test
+```
+
+## 主要功能
+
+- 商品展示和搜索
+- 购物车管理
+- 订单处理
+- 用户中心
+
+## 开发规范
+
+- 遵循 TypeScript 类型检查
+- 使用 ESLint 进行代码规范检查
+- 组件采用函数式组件和 Hooks
+- 使用 SASS 模块化管理样式
+
+## 部署
+
+项目构建后会生成 `build` 目录，包含所有静态资源，可直接部署到任何静态文件服务器。
+
+## 贡献指南
+
+1. Fork 项目
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 提交 Pull Request
+
+
+
