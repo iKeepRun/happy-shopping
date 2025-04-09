@@ -93,13 +93,38 @@ npm test
 
 项目构建后会生成 `build` 目录，包含所有静态资源，可直接部署到任何静态文件服务器。
 
-## 贡献指南
+## 学习指南
 
-1. Fork 项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 提交 Pull Request
+### 基础知识
+- React 基础概念和 Hooks 使用
+- TypeScript 类型系统
+- SASS 样式编写
+- React Router 路由管理
+
+### 项目学习路径
+1. 环境搭建
+   - 安装 Node.js 和 npm
+   - 克隆项目并安装依赖
+   - 熟悉项目结构
+
+2. 功能模块学习
+   - 商品展示模块
+   - 购物车功能实现
+   - 订单处理流程
+   - 用户中心管理
+
+3. 进阶学习
+   - 组件设计原则
+   - 状态管理方案
+   - 性能优化技巧
+   - 代码规范实践
+
+### 推荐资源
+- [React 官方文档](https://reactjs.org/)
+- [TypeScript 官方文档](https://www.typescriptlang.org/)
+- [React Router 文档](https://reactrouter.com/)
+- [SASS 官方文档](https://sass-lang.com/)
+
 
 
 
